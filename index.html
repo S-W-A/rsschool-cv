@@ -1,13 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV</title>
+  <title>Vadim Selivonchik CV</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#contacts">Contacts</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#about">About me</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#skills">Skills</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#code">Code examples</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#projects">Projects</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#education">Education</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#english">English</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="section profile" id="profile">
+          <img class="profile-photo" src="assets/img/avatar.jpg" alt="my photo">
+          <div class="box">
+            <h1 class="section-title cv-title">Vadim Selivonchik</h1>
+            <p class="subtitle">FUTURE JUNIOR FORNT-END DEVELOPER</p>
+          </div>
+        </section>
+        <section class="section" id="contacts">
+          <h2 class="section-title">Contacts</h2>
+          <ul class="section__list">
+            <li class="section__item">
+              Location: Saint-Petersburg, Russia
+            </li>
+            <li class="section__item">
+              <a class="section__link" href="tel:+79633434111">+79633434111</a>
+            </li>
+            <li class="section__item">
+              <a class="section__link" href="mailto:selivonchik.dev@gmail.com">selivonchik.dev@gmail.com</a>
+            </li>
+            <li class="section__item">
+              <a class="section__link" href="https://github.com/S-W-A">GitHub</a>
+            </li>
+            <li class="section__item">
+              Discord: @user__name#9734
+            </li>
+          </ul>
+        </section>
+        <section class="section" id="about">
+          <h2 class="section-title">About me</h2>
+          <p class="text">
+            My goal is to get a job as a frontend developer in the near future and become a highly qualified specialist.
+
+            I am responsible and executive. And I'm a HERO. It is very easy to be a HERO. All you need are honesty,
+            empathy, respect and open-mindedness.
+
+            Unfortunately, I don't have any commercial experience in software development. But I have a great desire to
+            study and learn new things.
+          </p>
+        </section>
+        <section class="section" id="skills">
+          <h2 class="section-title"></h2>
+          <ul class="section__list">
+            <li class="section__item">HTML5, CSS3</li>
+            <li class="section__item">Javascript</li>
+            <li class="section__item">SCSS</li>
+            <li class="section__item">GULP</li>
+            <li class="section__item">BEM</li>
+            <li class="section__item">VSCode</li>
+            <li class="section__item">Git, GitHub</li>
+          </ul>
+        </section>
+        <section class="section" id="code">
+          <h2 class="section-title">Code examples</h2>
+          <pre>
+            <code>
+              function createPhoneNumber(numbers) {
+                let str = '(';
+                for (let i = 0; i <= 9; i ++) {
+                  if (i == 2) {
+                    str += `${numbers[i]}) `;
+                    continue;
+                  } else if (i == 5) {
+                    str += `${numbers[i]}-`;
+                    continue;
+                  }
+                  str += numbers[i];
+                }
+                return str;
+              }
+            </code>
+          </pre>
+          <pre>
+            <code>
+              function findNextSquare(sq) {
+                if (Number.isInteger(Math.sqrt(sq))) {
+                  return (Math.sqrt(sq) + 1) ** 2;
+                }
+                return -1;
+              }
+            </code>
+          </pre>
+        </section>
+        <section class="section" id="projects">
+          <h2 class="section-title">Projects</h2>
+          <ul>
+            <li>
+              <a href="https://S-W-A.github.io/rsschool-cv/cv" class="link">CV#1. Markdown & Git</a>
+            </li>
+            <li>
+              <a href="https://S-W-A.github.io/rsschool-cv/ " class="link">CV#2. HTML, CSS & Git Basics</a>
+            </li>
+          </ul>
+        </section>
+        <section class="section" id="education">
+          <h2 class="section-title">Education</h2>
+          <p class="text">Saint-Petersburg State Institute of Technology, Engineer's degree</p>
+        </section>
+        <section class="section" id="english">
+          <h2 class="section-title">English</h2>
+          <p>Level B1</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a class="gh" href="https://github.com/S-W-A"></a>
+          <p class="year">©2022</p>
+          <a class="rss" href="https://rs.school/js/"></a>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>
