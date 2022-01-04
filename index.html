@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vadim Selivonchik CV</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -96,11 +98,15 @@
         </section>
         <section class="section" id="code">
           <h2 class="section-title">Code examples</h2>
+          <p class="text">
+            Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string
+            of those numbers in the form of a phone number.
+          </p>
           <pre>
             <code>
               function createPhoneNumber(numbers) {
                 let str = '(';
-                for (let i = 0; i <= 9; i ++) {
+                for (let i = 0; i &lt;= 9; i ++) {
                   if (i == 2) {
                     str += `${numbers[i]}) `;
                     continue;
@@ -114,6 +120,15 @@
               }
             </code>
           </pre>
+          <p class="text">
+            You might know some pretty large perfect squares. But what about the NEXT one?
+
+            Complete the findNextSquare method that finds the next integral perfect square after the one passed as a
+            parameter. Recall that an integral perfect square is an integer n such that sqrt(n) is also an integer.
+
+            If the parameter is itself not a perfect square then -1 should be returned. You may assume the parameter is
+            non-negative.
+          </p>
           <pre>
             <code>
               function findNextSquare(sq) {
