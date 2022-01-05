@@ -98,28 +98,31 @@
         </section>
         <section class="section" id="code">
           <h2 class="section-title">Code examples</h2>
+          <a href="https://www.codewars.com/kata/525f50e3b73515a6db000b83">Create Phone Number</a>
           <p class="text">
             Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string
             of those numbers in the form of a phone number.
           </p>
           <pre>
             <code>
-              function createPhoneNumber(numbers) {
-                let str = '(';
-                for (let i = 0; i &lt;= 9; i ++) {
-                  if (i == 2) {
-                    str += `${numbers[i]}) `;
-                    continue;
-                  } else if (i == 5) {
-                    str += `${numbers[i]}-`;
-                    continue;
-                  }
-                  str += numbers[i];
-                }
-                return str;
-              }
+        function createPhoneNumber(numbers) {
+          let str = '(';
+          for (let i = 0; i &lt;= 9; i ++) {
+            if (i == 2) {
+              str += `${numbers[i]}) `;
+              continue;
+            } else if (i == 5) {
+              str += `${numbers[i]}-`;
+              continue;
+            }
+            str += numbers[i];
+          }
+          return str;
+        }
             </code>
           </pre>
+          <hr>
+          <a href="https://www.codewars.com/kata/56269eb78ad2e4ced1000013">Find the next perfect square!</a>
           <p class="text">
             You might know some pretty large perfect squares. But what about the NEXT one?
 
@@ -131,12 +134,12 @@
           </p>
           <pre>
             <code>
-              function findNextSquare(sq) {
-                if (Number.isInteger(Math.sqrt(sq))) {
-                  return (Math.sqrt(sq) + 1) ** 2;
-                }
-                return -1;
-              }
+        function findNextSquare(sq) {
+          if (Number.isInteger(Math.sqrt(sq))) {
+            return (Math.sqrt(sq) + 1) ** 2;
+          }
+          return -1;
+        }
             </code>
           </pre>
         </section>
